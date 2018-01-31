@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nav_instruction_item_sign_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/my_primary_text" android:id="@id/nav_instruction_item_description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/nav_instruction_item_sign_iv" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/my_secondary_text" android:id="@id/nav_instruction_item_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/nav_instruction_item_sign_iv" android:layout_below="@id/nav_instruction_item_description_tv" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/my_secondary_text" android:id="@id/nav_instruction_item_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/nav_instruction_item_description_tv" android:layout_alignParentRight="true" />
+</RelativeLayout>

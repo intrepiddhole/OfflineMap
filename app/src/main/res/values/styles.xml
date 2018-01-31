@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeNew" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorPrimaryDark">@color/my_primary</item>
+        <item name="colorAccent">@color/my_primary</item>
+    </style>
+    <style name="DialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff577dea</item>
+    </style>
+    <style name="LightDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/my_primary</item>
+        <item name="buttonBarButtonStyle">@style/DialogButtonStyle</item>
+        <item name="colorAccent">@color/my_primary</item>
+    </style>
+    <style name="MYAppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="background">@color/my_primary</item>
+    </style>
+    <style name="MYAppThemeno" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="background">@color/my_primary</item>
+    </style>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:logo">@drawable/my_action_bar_logo</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="displayOptions">showHome|showTitle|useLogo</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="logo">@drawable/my_action_bar_logo</item>
+        <item name="background">@color/my_primary</item>
+    </style>
+    <style name="MyActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/my_icons</item>
+    </style>
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/my_icons</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+        <item name="android:background">#ff577dea</item>
+        <item name="colorAccent">#ffffffff</item>
+    </style>
+    <style name="MyAppThemeActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/apptheme_btn_radio_holo_light</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/apptheme_btn_check_holo_light</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+        <item name="android:actionMenuTextColor">@color/my_icons</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionMenuTextColor">@color/my_icons</item>
+        <item name="homeAsUpIndicator">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+    </style>
+    <style name="MyTitleTextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="OverflowButton" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+    </style>
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:background">@color/my_primary</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#ff577dea</item>
+        <item name="colorPrimaryDark">#ff577dea</item>
+    </style>
+    <style name="Widget.AppCompat.NotificationActionContainer" parent="" />
+    <style name="Widget.AppCompat.NotificationActionText" parent="" />
+</resources>

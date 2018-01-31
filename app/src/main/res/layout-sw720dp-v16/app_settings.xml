@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/app_settings_layout" android:background="@color/my_icons" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:fontFamily="sans-serif"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_settings_header" android:background="@color/my_primary" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/app_settings_clear_btn" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_down_white_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/app_settings_change_map" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_map_black_24dp" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_map" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/app_settings_tracking" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/app_settings_tracking_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_play_arrow_light_green_a700_24dp" />
+            <TextView android:textSize="16.0sp" android:id="@id/app_settings_tracking_tv_tracking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tracking" />
+            <TextView android:textSize="16.0sp" android:id="@id/app_settings_tracking_tv_switch" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="@string/tracking_start" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/app_settings_tracking_analytics" android:paddingLeft="60.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dis" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/my_primary_dark" android:id="@id/app_settings_tracking_tv_tracking_distance" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="10.0dip" android:id="@id/app_settings_tracking_tv_tracking_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" />
+            <TextView android:textSize="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="speed" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/my_primary_dark" android:id="@id/app_settings_tracking_tv_tracking_speed" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km/h    Analytics ?" />
+            <ImageView android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trending_up_light_green_a700_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/app_settings_navigation" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_navigation_black_24dp" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navigation" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/app_settings_weighting" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip">
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alternate_route" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/app_settings_weighting_rbtngroup" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="130.0dip" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_fastest_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/fastest" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_shortest_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/shortest" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+    </RadioGroup>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip">
+        <TextView android:textSize="14.0sp" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/directions" android:layout_alignParentLeft="true" />
+        <CheckBox android:id="@id/app_settings_directions_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:checked="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/advanced_setting" android:layout_alignParentLeft="true" />
+        <CheckBox android:id="@id/app_settings_advanced_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip">
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routing_algorithm" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/app_settings_routing_alg_rbtngroup" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="130.0dip" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_algorithm_bidijksjtra_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/bidirectional_dijkstra" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_algorithm_ontomdijksjtra_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/one_to_many_dijkstra" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_algorithm_biastar_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/bidirectional_a_star" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/app_settings_algorithm_uniastar_rbtn" android:layout_width="180.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/unidirectional_a_star" android:drawableRight="@drawable/apptheme_btn_radio_holo_light" />
+    </RadioGroup>
+</LinearLayout>

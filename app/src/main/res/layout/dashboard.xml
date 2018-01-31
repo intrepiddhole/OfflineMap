@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/offline" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offline" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Offline" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/drivingRoute2D" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drivingroute2d" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="2D Driving Route" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/drivingRoute3D" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drivingroute3d" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="3D Driving Route" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/share_loc" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_location" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="My Location" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/share_app" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_app" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Share App" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/more_apps" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_apps" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Discover Apps" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.gms.ads.AdView android:id="@id/adView_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/rate_us" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_us" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Rate US" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/privacy_policy" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/privacy_policy" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Privacy Policy" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/quit" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quit" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Quit" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="Promoted Apps" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/find_friend" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/friend_finder" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Find Friends and Family..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/gps_map" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/gps_map_direction" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="GPS Map Direction..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/gps_voice" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/voice_map" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="GPS Voice Driving Route..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/streetviewapp" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/streetview" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Live Street View Map..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/pkoffline" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/pak_offline" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="PK Offline Navigation Map..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/vmn" android:background="@null" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/offlinemm" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Offline GPS Navigation..." />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Download" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

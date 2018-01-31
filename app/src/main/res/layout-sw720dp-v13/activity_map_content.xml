@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/map_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:background="@null" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ZOOM IN / OUT to View Map" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/map_show_my_position_fab" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_marginLeft="@dimen/fab_margin_default" android:layout_marginTop="@dimen/fab_margin_default" android:layout_marginRight="@dimen/fab_margin_default" android:layout_marginBottom="@dimen/fab_margin_default" android:src="@drawable/ic_location_searching_white_24dp" android:layout_alignParentRight="true" app:fabSize="mini" />
+    <View android:id="@id/statusBarBackgroundMap" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/map_side_bar" />
+    <include layout="@layout/app_settings" />
+    <include layout="@layout/map_nav_settings" />
+    <include layout="@layout/map_nav_settings_from" />
+    <include layout="@layout/map_nav_settings_to" />
+    <include layout="@layout/map_nav_instruction" />
+    <include layout="@layout/map_nav_instruction_list" />
+    <include layout="@layout/map_nav_settings_cal" />
+</RelativeLayout>

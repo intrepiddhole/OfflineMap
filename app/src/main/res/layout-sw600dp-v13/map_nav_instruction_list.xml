@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nav_instruction_list_layout" android:background="@color/my_divider" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center|left" android:id="@id/nav_instruction_list_summary" android:background="@color/my_primary" android:paddingLeft="16.0dip" android:paddingTop="28.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center|left" android:id="@id/nav_instruction_list_control" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/nav_instruction_list_travel_mode_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_directions_walk_orange_24dp" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/nav_instruction_list_clear_btn" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_down_white_24dp" android:layout_alignParentRight="true" />
+            <ImageButton android:id="@id/nav_instruction_list_stop_btn" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_stop_white_24dp" android:layout_toLeftOf="@id/nav_instruction_list_clear_btn" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/nav_instruction_list_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nav_instruction_list_control">
+            <ImageView android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_location_start_white_24dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/my_divider" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/from_loc" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/my_divider" android:id="@id/nav_instruction_list_summary_from_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/nav_instruction_list_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nav_instruction_list_from">
+            <ImageView android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_location_end_white_24dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/my_divider" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/to_loc" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/my_divider" android:id="@id/nav_instruction_list_summary_to_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center|left" android:id="@id/nav_instruction_list_dis_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nav_instruction_list_to">
+            <ImageView android:id="@id/nav_instruction_list_distance_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_space_bar_white_24dp" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/my_divider" android:id="@id/nav_instruction_list_distance_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/distance" android:layout_toRightOf="@id/nav_instruction_list_distance_iv" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/my_icons" android:id="@id/nav_instruction_list_summary_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99999.999 km" android:layout_toRightOf="@id/nav_instruction_list_distance_iv" android:layout_below="@id/nav_instruction_list_distance_text_view" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/my_divider" android:id="@id/nav_instruction_list_time_text_view" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/time" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/my_icons" android:id="@id/nav_instruction_list_summary_time_tv" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="000:00 h:m" android:layout_below="@id/nav_instruction_list_time_text_view" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/nav_instruction_list_time_iv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/ic_timer_white_24dp" android:layout_toLeftOf="@id/nav_instruction_list_time_text_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/nav_instruction_recycler_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nav_instruction_list_summary" />
+</RelativeLayout>

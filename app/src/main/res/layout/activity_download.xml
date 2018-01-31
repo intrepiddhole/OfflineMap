@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statusBarBackgroundDownload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/my_primary" android:id="@id/my_maps_download_load_list_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_dotdotdot" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/my_maps_download_load_list_pb" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="10.0dip" android:progressDrawable="@drawable/blue_progress" android:layout_above="@id/my_maps_download_load_list_tv" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <android.support.v7.widget.RecyclerView android:id="@id/my_maps_download_recycler_view" android:background="@color/my_icons" android:paddingTop="16.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner_download_offline" android:layout_below="@id/statusBarBackgroundDownload" />
+    <com.google.android.gms.ads.AdView android:id="@id/banner_download_offline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

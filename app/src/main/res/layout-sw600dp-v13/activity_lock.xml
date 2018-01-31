@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_about_us" android:background="@drawable/bg_quit" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_above="@id/adView" android:layout_alignParentTop="true">
+        <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/textView4" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Do You Want To Quit?" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <ImageButton android:id="@id/ok_quitapp" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/quit_yes" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_cancel_app" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/quit_no" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>
